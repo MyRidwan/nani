@@ -188,6 +188,7 @@ domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 
 #link izin ip vps
+function izinx(){
 url_izin='https://kytvpn.xcodehoster.com/izin'
 
 # Mendapatkan IP VPS saat ini
@@ -223,7 +224,7 @@ else
   exit 0
 fi
 
-
+}
 clear
 rm -rf setup.sh
 rm -rf /etc/xray/domain
